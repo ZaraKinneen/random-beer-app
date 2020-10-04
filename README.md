@@ -32,11 +32,11 @@ npm run dev
 - Styled Components
 
 
-
 ## Future Improvements
 
 - Create shared styles for common components
-- Create global typography file
 - Use .env file for security
-- More testing 
+- Add absolute paths 
+- Add TypeScript
+- Add more test cases
 

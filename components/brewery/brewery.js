@@ -2,7 +2,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const Container = styled.div`
-  min-height: 85vh;
+  min-height: 80vh;
   background: ${({ theme }) => theme.colors.primary};
 `;
 
@@ -28,7 +28,7 @@ const Grid = styled.div`
 `;
 
 const Card = styled.div`
-  margin: 1rem;
+  margin: 0.25em;
   flex-basis: fit-content;
   padding: 1.5em;
 `;
@@ -45,7 +45,7 @@ const TextContainer = styled.span`
 `;
 
 const Text = styled.p`
-  font-size: 1.3em;
+  font-size: 1em;
   color: ${({ theme }) => theme.fonts.light};
   margin: 0.8em;
   align-items: center;
@@ -54,7 +54,8 @@ const Text = styled.p`
 
 const Icon = styled.img`
   width: 100%;
-  max-width: 2.4rem;
+  padding: 0.25em 0;
+  max-width: 1.6em;
   height: auto;
 `;
 
@@ -70,8 +71,7 @@ const LinkContainer = styled.span`
 `;
 
 const Title = styled.h1`
-  font-size: 2em;
-  max-width: 50rem;
+  max-width: 50em;
   color: ${({ theme }) => theme.fonts.highlight};
 `;
 

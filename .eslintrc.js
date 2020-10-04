@@ -1,6 +1,7 @@
 module.exports = {
   // Specifies the ESLint parser
-  parser: "eslint/parser",
+  parser: "babel-eslint",
+  root: true, // Make sure eslint picks up the config at the root of the directory
   extends: [
     "plugin:react/recommended",
     "plugin:eslint/recommended",
@@ -16,6 +17,7 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
+    jest: true
   },
   plugins: ["eslint", "react", "prettier"],
   parserOptions: {

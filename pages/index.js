@@ -8,7 +8,7 @@ import ButtonComponent from "../components/button/button";
 import HeaderComponent from "../components/header/header";
 import LoadingComponent from "../components/loading/loading";
 
-export default function Beer({ initialData }) {
+export default function HomePage({ initialData }) {
   const [beer, setBeer] = useState(initialData);
 
   const fetchNewBeer = async () => {
@@ -49,7 +49,6 @@ export default function Beer({ initialData }) {
 
 export async function getServerSideProps() {
   const res = await getDataOnLoad();
-
   return {
     props: {
       initialData: res,
