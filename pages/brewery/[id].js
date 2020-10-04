@@ -24,19 +24,21 @@ export default function Brewerey() {
     query: { id, beerId, beerName },
   } = router;
 
-  const getBrewery = async () => {
-    const res = await getBreweryById(id);
-    setBrewery(res);
-  };
-
   useEffect(() => {
+    const getBrewery = async () => {
+      const res = await getBreweryById(id);
+      setBrewery(res);
+    };
+
     getBrewery();
   }, [id]);
 
   return (
     <>
-      <HeaderComponent title={"Random Beer App"}>
-        <Text>The home of {beerName} beer</Text>
+      <HeaderComponent title="Random Beer App">
+        <Text>
+          The home of {beerName} beer
+        </Text>
       </HeaderComponent>
       {!id || !brewery ? (
         <LoadingComponent />

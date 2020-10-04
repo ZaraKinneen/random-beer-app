@@ -1,6 +1,6 @@
-import HeaderComponent from "../components/header/header";
 import styled from "styled-components";
 import Link from "next/link";
+import HeaderComponent from "../components/header/header";
 
 const Container = styled.div`
   min-height: 80vh;
@@ -42,17 +42,19 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.fonts.highlight};
 `;
 
-export default () => (
+const PageNotFound = () => (
   <>
     <HeaderComponent title="Random Beer App" />
     <Container>
       <Title>Looks like you are lost...</Title>
       <LinkContainer>
         <Image src="/images/beer.png" alt="beer" />
-        <Link href={"/"}>
+        <Link href="/">
           <Text>Take Me Back to the Beer</Text>
         </Link>
       </LinkContainer>
     </Container>
   </>
 );
+
+export default PageNotFound;

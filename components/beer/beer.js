@@ -89,7 +89,7 @@ export default function BeerComponent({
       <Main>
         <Grid>
           <Card>
-            <Image src={label} alt="beer-label"></Image>
+            <Image src={label} alt="beer-label" />
           </Card>
           <Card>
             <Title>{name}</Title>

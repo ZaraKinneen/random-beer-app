@@ -2,7 +2,7 @@
 
 This is a simple web app using [BreweryDB](https://www.brewerydb.com/) which allows a user to get a random beer and its brewery details.
 
-## Installation
+## Running the Application
 
 1. Clone the repo
 
@@ -23,6 +23,20 @@ npm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application
+
+
+5. Run the linting
+
+```sh
+npm run lint
+```
+
+6. Run the test suite
+
+```sh
+npm run test
+```
+
 
 
 ## Built With

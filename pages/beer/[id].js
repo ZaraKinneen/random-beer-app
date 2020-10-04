@@ -17,6 +17,11 @@ export default function Beer() {
     query: { id },
   } = router;
 
+  const fetchNewBeer = async () => {
+    const res = await getRandomBeer();
+    setBeer(res);
+  };
+
   useEffect(() => {
     if (id) {
       getBeerById(id).then((data) => setBeer(data));
@@ -25,14 +30,9 @@ export default function Beer() {
     }
   }, []);
 
-  const fetchNewBeer = async () => {
-    const res = await getRandomBeer();
-    setBeer(res);
-  };
-
   return (
     <>
-      <HeaderComponent title={"The Random Beer App"}>
+      <HeaderComponent title="The Random Beer App">
         <ButtonComponent
           onClick={fetchNewBeer}
           img="/images/beer.png"

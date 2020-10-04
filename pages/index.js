@@ -18,7 +18,7 @@ export default function HomePage({ initialData }) {
 
   return (
     <>
-      <HeaderComponent title={"The Random Beer App"}>
+      <HeaderComponent title="The Random Beer App">
         <ButtonComponent
           onClick={fetchNewBeer}
           img="/images/beer.png"
