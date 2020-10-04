@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Head from "next/head";
-
 import styled from "styled-components";
 
 import { getBreweryById } from "../../api";
-import BreweryComponent from "../../components/brewery";
-import HeaderComponent from "../../components/header";
-import LoadingComponent from "../../components/loading";
+
+import BreweryComponent from "../../components/brewery/brewery";
+import HeaderComponent from "../../components/header/header";
+import LoadingComponent from "../../components/loading/loading";
 
 const Text = styled.p`
   font-size: 1.3em;
@@ -19,8 +18,6 @@ const Text = styled.p`
 
 export default function Brewerey() {
   const [brewery, setBrewery] = useState();
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
 
   const router = useRouter();
   const {
@@ -28,16 +25,8 @@ export default function Brewerey() {
   } = router;
 
   const getBrewery = async () => {
-    setLoading(true);
-
-    try {
-      const res = await getBreweryById(id);
-      setBrewery(res);
-    } catch (error) {
-      setError(true);
-    } finally {
-      setLoading(false);
-    }
+    const res = await getBreweryById(id);
+    setBrewery(res);
   };
 
   useEffect(() => {
@@ -46,15 +35,10 @@ export default function Brewerey() {
 
   return (
     <>
-      <Head>
-        <title>Random Beer App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <HeaderComponent title={"Random Beer App"}>
         <Text>The home of {beerName} beer</Text>
       </HeaderComponent>
-      {error && <div>Something went wrong ...</div>}
-      {loading ? (
+      {!id || !brewery ? (
         <LoadingComponent />
       ) : (
         brewery && (

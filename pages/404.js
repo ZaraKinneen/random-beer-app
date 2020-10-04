@@ -1,9 +1,9 @@
-import HeaderComponent from "../components/Header";
+import HeaderComponent from "../components/header/header";
 import styled from "styled-components";
 import Link from "next/link";
 
 const Container = styled.div`
-  height: 80vh;
+  min-height: 80vh;
   text-align: center;
   align-items: center;
   background: ${({ theme }) => theme.colors.primary};
@@ -11,13 +11,13 @@ const Container = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  max-width: 20em;
+  max-width: 15em;
   height: auto;
-  margin-top: 10em;
+  margin-top: 5em;
 `;
 
 const Text = styled.p`
-  // font-size: 1.8em;
+  font-size: 1.8em;
   color: ${({ theme }) => theme.fonts.light};
   font-weight: bold;
 `;
@@ -48,7 +48,7 @@ export default () => (
     <Container>
       <Title>Looks like you are lost...</Title>
       <LinkContainer>
-        <Image src="./beer.png" alt="beer" />
+        <Image src="/static/images/beer.png" alt="beer" />
         <Link href={"/"}>
           <Text>Take Me Back to the Beer</Text>
         </Link>

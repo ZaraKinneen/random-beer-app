@@ -3,7 +3,6 @@ import styled from "styled-components";
 const ButtonContainer = styled.div`
   background: ${({ theme }) => theme.colors.secondary};
   text-align: center;
-  padding: 2em;
 `;
 
 const Icon = styled.img`
@@ -16,8 +15,8 @@ const Icon = styled.img`
 const Button = styled.button`
   background: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.fonts.light};
-  padding: 0 0.5em;
-  border: 3px solid white;
+  margin: 1em;
+  border: 2px solid white;
   border-radius: 5px;
   &:hover {
     cursor: pointer;
@@ -34,7 +33,7 @@ const ButtonDetail = styled.span`
 `;
 
 const Text = styled.p`
-  margin: 1em;
+  margin: 0.5em;
   font-size: 1.2rem;
 `;
 

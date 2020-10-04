@@ -26,7 +26,7 @@ const Spinner = styled.img`
 const LoadingComponent = () => (
   <>
     <Loading>
-      <Spinner src="./spinner.svg" alt="loading-spinner" />
+      <Spinner src="/static/images/spinner.svg" alt="loading-spinner" />
     </Loading>
   </>
 );

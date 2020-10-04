@@ -1,5 +1,13 @@
 import { CORS, BASE_URL, API_KEY } from "../utils/constants";
 
+export const getDataOnLoad = async () => {
+  const URL = `${BASE_URL}/beer/random/?withBreweries=Y&hasLabels=Y&key=${API_KEY}`;
+  const body = await fetch(URL);
+  const data = await body.json();
+  return data.data;
+};
+
+
 export const getRandomBeer = async () => {
   const URL = `${CORS}/${BASE_URL}/beer/random/?withBreweries=Y&hasLabels=Y&key=${API_KEY}`;
   const body = await fetch(URL);

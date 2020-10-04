@@ -77,9 +77,7 @@ const Title = styled.h1`
 `;
 
 export default function BreweryComponent({
-  id,
   beerId,
-  beerName,
   breweryName,
   website,
   isOrganic,
@@ -87,7 +85,6 @@ export default function BreweryComponent({
   image,
   description,
 }) {
-  console.log(id, beerId, beerName);
   return (
     <>
       <>
