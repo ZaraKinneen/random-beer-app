@@ -21,7 +21,7 @@ export default function Beer({ initialData }) {
       <HeaderComponent title={"The Random Beer App"}>
         <ButtonComponent
           onClick={fetchNewBeer}
-          img="/static/images/beer.png"
+          img="/images/beer.png"
           alt="beer-img"
           text="Show More Beer"
         />

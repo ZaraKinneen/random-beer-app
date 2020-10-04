@@ -85,49 +85,47 @@ export default function BeerComponent({
   category,
 }) {
   return (
-    <>
-      <Container>
-        <Main>
-          <Grid>
-            <Card>
-              <Image src={label} alt="beer-label"></Image>
-            </Card>
-            <Card>
-              <Title>{name}</Title>
-              <TextContainer>
-                <Icon src="/static/images/percentage.svg" alt="abv-img" />
-                <Text>ABV: {abv}</Text>
-              </TextContainer>
-              <TextContainer>
-                <Icon src="/static/images/grain.svg" alt="ibu-img" />
-                <Text>IBU: {ibu}</Text>
-              </TextContainer>
-              <TextContainer>
-                <Icon src="/static/images/category.svg" alt="category-img" />
-                <Text>Category: {category}</Text>
-              </TextContainer>
-              <TextContainer>
-                <Icon src="/static/images/brewery.svg" alt="brewery-img" />
-                <Link
-                  href={{
-                    pathname: "/brewery/[id]",
-                    query: { beerId: id, beerName: name },
-                  }}
-                  passHref
-                  as={`/brewery/${breweries[0].id}`}
-                >
-                  <LinkContainer>
-                    <Text>Brewed by: {breweries[0].name}</Text>
-                  </LinkContainer>
-                </Link>
-              </TextContainer>
-            </Card>
-            <Card>
-              <Text>{description}</Text>
-            </Card>
-          </Grid>
-        </Main>
-      </Container>
-    </>
+    <Container>
+      <Main>
+        <Grid>
+          <Card>
+            <Image src={label} alt="beer-label"></Image>
+          </Card>
+          <Card>
+            <Title>{name}</Title>
+            <TextContainer>
+              <Icon src="/images/percentage.svg" alt="abv-img" />
+              <Text>ABV: {abv}</Text>
+            </TextContainer>
+            <TextContainer>
+              <Icon src="/images/grain.svg" alt="ibu-img" />
+              <Text>IBU: {ibu}</Text>
+            </TextContainer>
+            <TextContainer>
+              <Icon src="/images/category.svg" alt="category-img" />
+              <Text>Category: {category}</Text>
+            </TextContainer>
+            <TextContainer>
+              <Icon src="/images/brewery.svg" alt="brewery-img" />
+              <Link
+                href={{
+                  pathname: "/brewery/[id]",
+                  query: { beerId: id, beerName: name },
+                }}
+                passHref
+                as={`/brewery/${breweries[0].id}`}
+              >
+                <LinkContainer>
+                  <Text>Brewed by: {breweries[0].name}</Text>
+                </LinkContainer>
+              </Link>
+            </TextContainer>
+          </Card>
+          <Card>
+            <Text>{description}</Text>
+          </Card>
+        </Grid>
+      </Main>
+    </Container>
   );
 }

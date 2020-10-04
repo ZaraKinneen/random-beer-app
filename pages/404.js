@@ -48,7 +48,7 @@ export default () => (
     <Container>
       <Title>Looks like you are lost...</Title>
       <LinkContainer>
-        <Image src="/static/images/beer.png" alt="beer" />
+        <Image src="/images/beer.png" alt="beer" />
         <Link href={"/"}>
           <Text>Take Me Back to the Beer</Text>
         </Link>

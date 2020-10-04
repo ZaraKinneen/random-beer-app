@@ -24,11 +24,9 @@ const Spinner = styled.img`
 `;
 
 const LoadingComponent = () => (
-  <>
-    <Loading>
-      <Spinner src="/static/images/spinner.svg" alt="loading-spinner" />
-    </Loading>
-  </>
+  <Loading>
+    <Spinner src="/images/spinner.svg" alt="loading-spinner" />
+  </Loading>
 );
 
 export default LoadingComponent;
