@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import Head from "next/head";
 
 const GlobalStyle = createGlobalStyle` 
   body {
@@ -33,6 +34,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
+        <Head>
+          <title>Random Beer App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
