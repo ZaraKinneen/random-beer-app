@@ -41,6 +41,7 @@ npm run test
 - React
 - Nextjs
 - Styled Components
+- Jest
 
 ## Future Improvements
 
