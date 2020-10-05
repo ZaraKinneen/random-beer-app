@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreweryComponent should match snapshot 1`] = `
+<div>
+  <div
+    class="brewery__Container-eggu3v-0 eSQSSF"
+  >
+    <span
+      class="brewery__LinkContainer-eggu3v-8 Kdlpq"
+      href="/beer/undefined"
+    >
+      <p
+        class="brewery__Text-eggu3v-6 iABviU"
+      >
+        Go Back
+      </p>
+    </span>
+    <div
+      class="brewery__Main-eggu3v-1 NIkkH"
+    >
+      <div
+        class="brewery__Grid-eggu3v-2 huEpEK"
+      >
+        <div
+          class="brewery__Card-eggu3v-3 iYJFOE"
+        >
+          <h1
+            class="brewery__Title-eggu3v-9 hvnLuT"
+          />
+          <span
+            class="brewery__TextContainer-eggu3v-5 gQCchi"
+          >
+            <img
+              alt="organic-img"
+              class="brewery__Icon-eggu3v-7 hsbnXh"
+              src="/images/grain.svg"
+            />
+            <p
+              class="brewery__Text-eggu3v-6 iABviU"
+            >
+              Organic: 
+            </p>
+          </span>
+          <span
+            class="brewery__TextContainer-eggu3v-5 gQCchi"
+          >
+            <img
+              alt="www-img"
+              class="brewery__Icon-eggu3v-7 hsbnXh"
+              src="/images/www.svg"
+            />
+            <p
+              class="brewery__Text-eggu3v-6 iABviU"
+            >
+               
+            </p>
+          </span>
+          <span
+            class="brewery__TextContainer-eggu3v-5 gQCchi"
+          >
+            <img
+              alt="establsihed-img"
+              class="brewery__Icon-eggu3v-7 hsbnXh"
+              src="/images/factory.svg"
+            />
+            <p
+              class="brewery__Text-eggu3v-6 iABviU"
+            >
+              Established: 
+               
+            </p>
+          </span>
+        </div>
+        <div
+          class="brewery__Card-eggu3v-3 iYJFOE"
+        >
+          <img
+            class="brewery__Image-eggu3v-4 dmcwMa"
+          />
+        </div>
+        <div
+          class="brewery__Card-eggu3v-3 iYJFOE"
+        >
+          <p
+            class="brewery__Text-eggu3v-6 iABviU"
+          >
+             
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

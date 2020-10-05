@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonComponent should match snapshot 1`] = `
+<div>
+  <div
+    class="button__ButtonContainer-banjw0-0 iAsILJ"
+  >
+    <button
+      class="button__Button-banjw0-2 kZkJPj"
+    >
+      <span
+        class="button__ButtonDetail-banjw0-3 esgwoO"
+      >
+        <p
+          class="button__Text-banjw0-4 elNeGS"
+        />
+        <img
+          class="button__Icon-banjw0-1 fnTJtB"
+        />
+      </span>
+    </button>
+  </div>
+</div>
+`;

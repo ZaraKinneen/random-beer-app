@@ -1,6 +1,6 @@
 # Random Beer App ![Beer Logo](/public/favicon.ico)
 
-This is a simple web app using [BreweryDB](https://www.brewerydb.com/) which allows a user to get a random beer and its brewery details.
+This is a simple responsive web app using [BreweryDB](https://www.brewerydb.com/) which allows a user to get a random beer and its brewery details.
 
 ## Running the Application
 
@@ -24,7 +24,6 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application
 
-
 5. Run the linting
 
 ```sh
@@ -37,20 +36,16 @@ npm run lint
 npm run test
 ```
 
-
-
 ## Built With
 
 - React
 - Nextjs
 - Styled Components
 
-
 ## Future Improvements
 
 - Create shared styles for common components
 - Use .env file for security
-- Add absolute paths 
+- Add absolute paths
 - Add TypeScript
 - Add more test cases
-
