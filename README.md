@@ -2,6 +2,12 @@
 
 This is a simple responsive web app using [BreweryDB](https://www.brewerydb.com/) which allows a user to get a random beer and its brewery details.
 
+
+## Demo
+
+[View demo here](https://codesandbox.io/s/sharp-sanne-92cjs)
+
+
 ## Running the Application
 
 1. Clone the repo
